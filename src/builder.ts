@@ -1,5 +1,4 @@
-import { nt, f, san } from 'nefs';
-import { m, san as tssan } from 'tschess';
+import { nt, m, f, san, tssan } from 'tschess';
 import * as erm from './types';
 import { pClimbWithRoot, pAdd, pnode, PNode } from './pnode';
 import { dis, em } from 'esra';
@@ -25,30 +24,38 @@ export default class StudyBuilder {
   addPgn() {
     let fenMap = new Map();
     if (this._root) {
-      pClimbWithRoot(f.situation(nt.initialFen), this._root, (situation, _) => {
+      pClimbWithRoot(f.situation(nt.initialFen), this._root, (situation, _, maxDepth) => {
+        _.maxPly = maxDepth;
         if (situation && _.move.sanMeta) {
-          let fen = f.fen(situation);
           let tsmove = tssan.moveOrCastle(_.move.sanMeta, situation);
+
           if (tsmove) {
             let after = m.situationAfter(tsmove);
             _.tsmove = tsmove;
-            if (tsmove) {
-              let res = fenMap.get(fen);
-              if (!res) {
-                fenMap.set(fen, [_]);
-              } else {
-                res.push(_);
-              }
-              return after;
+            let res = fenMap.get(f.fen(situation));
+            if (!res) {
+              fenMap.set(f.fen(situation), [_]);
+            } else {
+              res.push(_);
             }
+            return after;
           }
         }
       });
     }
+
+    let branchPlies = [];
+
+    for (let moves of fenMap.values()) {
+      if (moves[1]) {
+        branchPlies.push(moves[1].ply);
+      }
+    }
     
     let pgn = {
       tags: this._tags,
-      fenMap
+      fenMap,
+      branchPlies
     };
 
     this.pgns.push(pgn);

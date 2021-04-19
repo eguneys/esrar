@@ -1,21 +1,29 @@
-import { ts } from 'tschess';
-import { nt } from 'nefs';
+import { nt, ts } from 'tschess';
+
+export type Ply = number
 
 export type QPGN = {
   tags: TagMap,
-  fenMap: FenMap
+  fenMap: FenMap,
+  branchPlies: Array<Ply>
 }
 
 export type QMove = {
-  ply: number,
+  ply: Ply,
+  maxPly?: Ply,
   move: SanMetaWithExtra,
   tsmove?: ts.Move,
   fenAfter?: nt.Fen
 }
 
+export type QScore = {
+  ply: Ply,
+  maxPly: Ply
+}
+
 export type TagMap = Map<string, string>
 
-export type FenMap = Map<number, Array<QMove>>
+export type FenMap = Map<nt.Fen, Array<QMove>>
 
 export type SanMetaWithExtra = {
   sanMeta?: nt.SanMetaOrCastles,
