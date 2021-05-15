@@ -1,6 +1,6 @@
 {
   "name": "esrar",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "include": [
     "src/*.ts"
   ],
@@ -19,5 +19,8 @@
     "tsc-watch": "^4.2.9",
     "typescript": "^4.2.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "esra": "^1.0.1",
+    "tschess": "^1.1.3"
+  }
 }
