@@ -1,7 +1,7 @@
-import { nt, m, f, san, tssan } from 'tschess';
 import * as erm from './types';
 import { pClimbWithRoot, pAdd, pnode, PNode } from './pnode';
 import { dis, em } from 'esra';
+import { situation, initial, SanOrCastles, sanOrCastles } from 'chests';
 
 export type CurrentAndParent = [PNode<erm.QMove> | undefined, PNode<erm.QMove>]
 
@@ -13,7 +13,6 @@ export default class StudyBuilder {
   __branchs: Array<CurrentAndParent>;
   __currentParent?: PNode<erm.QMove>;
   __current?: PNode<erm.QMove>;
-  fenMap?: erm.FenMap;
 
   constructor() {
     this.pgns = [];
@@ -24,41 +23,44 @@ export default class StudyBuilder {
   addPgn() {
     let fenMap = new Map();
     if (this._root) {
-      pClimbWithRoot(f.situation(nt.initialFen), this._root, (situation, _, maxDepth) => {
-        _.maxPly = maxDepth;
-        if (situation && _.move.sanMeta) {
-          let tsmove = tssan.moveOrCastle(_.move.sanMeta, situation);
 
+      pClimbWithRoot(situation(initial), this._root, (situation, _, maxDepth) => {
+        _.maxPly = _.ply + maxDepth;
+        if (situation && _.move.san) {
+          let tsmove = situation.sanOrCastles(_.move.san);
           if (tsmove) {
-            let after = m.situationAfter(tsmove);
+            let after = tsmove.after;
             _.tsmove = tsmove;
-            let res = fenMap.get(f.fen(situation));
+            let res = fenMap.get(situation.fen);
             if (!res) {
-              fenMap.set(f.fen(situation), [_]);
+              fenMap.set(situation.fen, [_]);
             } else {
               res.push(_);
             }
             return after;
+          } else {
+            console.warn(situation.fen, _.move.san);
           }
         }
+        return situation;
       });
-    }
 
-    let branchPlies = [];
+      let branchPlies = [];
 
-    for (let moves of fenMap.values()) {
-      if (moves[1]) {
-        branchPlies.push(moves[1].ply);
+      for (let moves of fenMap.values()) {
+        if (moves[1]) {
+          branchPlies.push(moves[1].ply);
+        }
       }
-    }
-    
-    let pgn = {
-      tags: this._tags,
-      fenMap,
-      branchPlies
-    };
+      let pgn = {
+        tags: this._tags,
+        fenMap,
+        variations: this._root,
+        branchPlies
+      };
 
-    this.pgns.push(pgn);
+      this.pgns.push(pgn);
+    }
 
     this._tags = new Map();
     this._root = undefined;
@@ -134,11 +136,11 @@ export default class StudyBuilder {
         self._tags.set(name, value);
       },
       san(_san: string) {
-        return san.str2meta(_san);
+        return sanOrCastles(_san);
       },
-      sanWithExtra(sanMeta: nt.SanMetaOrCastles | undefined, extra: any) {
+      sanWithExtra(san: SanOrCastles | undefined, extra: any) {
         return {
-          sanMeta,
+          san,
           extra
         };
       }

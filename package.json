@@ -20,7 +20,7 @@
     "typescript": "^4.2.3"
   },
   "dependencies": {
-    "esra": "^1.0.1",
-    "tschess": "^1.1.4"
+    "chesst": "^2.0.0",
+    "esra": "^1.0.1"
   }
 }

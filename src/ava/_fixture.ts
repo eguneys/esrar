@@ -4,6 +4,20 @@ export const simple = `
 1. d4 d5 (1... d6 2. Nf3) 2. c3 *
 `;
 
+export const advanced = `
+[Event "Playing the French: Chapter 1 - The Advance Variation"]
+[Site "https://lichess.org/study/xmgcG4Qz/HE8yauSF"]
+[Result "*"]
+[UTCDate "2021.05.15"]
+[UTCTime "15:39:55"]
+[Variant "Standard"]
+[ECO "C02"]
+[Opening "French Defense: Advance Variation, Nimzowitsch System"]
+[Annotator "https://lichess.org/@/chesteditor"]
+
+1. e4 e6 2. d4 d5 3. e5 c5 4. Nf3 { D } (4. dxc5 { A } 4... Nc6! 5. Nf3 Bxc5 6. Bd3 f6! 7. Qe2 fxe5 8. Nxe5 Nxe5 9. Qxe5 Nf6! 10. O-O O-O 11. Nc3 Bd6 12. Qg5 e5 13. f3 a6 14. Qh4 Be6 15. Kh1 Rc8 16. Bg5 h6 17. Bd2 Nd7 $15)  (4. f4 { B } 4... Nc6 5. Nf3 Qb6 6. c3 Nh6! $15 { [%cal Gf8e7,Ge8g8,Gf7f6,Gh6f7,Gc8d7,Ga8c8,Gc5d4,Gh6f5] } 7. Bd3 Bd7! 8. Bc2 Rc8! 9. a3 Be7 10. O-O cxd4 11. cxd4 Nxd4!! 12. Nxd4 Bc5 13. Kh1 Bxd4 14. Nd2 Bb5 15. Ba4 O-O 16. Bxb5 Qxb5 17. Nb3 Nf5 18. Rf3 Bb6 19. g4 Nh6 20. h3 Qc4 21. f5 exf5 22. g5 Ng4 23. hxg4 Qxg4 24. Rd3 Qh4+ 25. Kg2 Qf2+ 26. Kh3 Rc4 27. Rg3 Rh4+ { 0-1 })  (4. Qg4 { C } 4... Nc6! 5. Nf3 Qa5+! 6. c3 cxd4 7. Bd3 dxc3 8. Nxc3 $146 d4! { [%cal Gf7f5,Gg4f4,Gg8e7] } 9. Nxd4 Qxe5+ 10. Be3 Nf6 $15 11. Qh4 Nxd4 12. Qxd4 Qxd4 13. Bxd4 Be7 $17) 4... Nc6 { D1 } (4... cxd4 { D2 } 5. Nxd4 { D21 } (5. Bd3 { D23 } 5... Ne7! 6. O-O Nec6! 7. Re1 Nd7 8. a3 Qc7! $146 9. Qe2 Nc5 10. b4 Nxd3 11. Qxd3 Be7 $15)  (5. Qxd4 { D22 } 5... Nc6 6. Qf4 Nge7! 7. Bd3 Ng6 8. Qg3 Qc7 9. Nc3 Ngxe5 10. O-O Nxf3+ 11. Qxf3 Be7 12. Bf4 Qd8 13. Rad1 O-O $17) 5... Nc6 6. Nxc6 bxc6 7. Bd3 Ne7 8. Nd2 Ng6 9. Nf3 Be7 10. Qe2 c5 11. c4 Bb7 12. O-O O-O 13. Bd2?! dxc4 14. Bxc4? Bxf3 15. gxf3 Bg5 16. Be3 Bf4 17. Rfc1 Qh4 18. Bxf4 Nxf4 19. Qe3 Qg5+ 20. Kf1 Rad8!) 5. Bd3 Nxd4!? 6. Nxd4 cxd4 7. O-O Ne7 8. Re1 Nc6 9. Qg4 Qc7! 10. Bf4 h5! $146 11. Qg3 h4 12. Qg4 h3 13. g3 Bd7 14. Nd2 O-O-O 15. Nf3 f6 16. exf6 e5 17. fxg7 Bxg7 18. Qxg7 exf4 19. Nh4 fxg3 20. fxg3 Rhg8 21. Qh6 Ne5 22. Qf4 *
+`;
+
 export const more = `
 [Event "London System Vol 1: Introduction"]
 [Site "https://lichess.org/study/pdOA31Bl/VgAS9w2h"]

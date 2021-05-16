@@ -1,4 +1,3 @@
-import { nt, m } from 'tschess';
 import * as erm from './types';
 
 function almostEqual(fen: string, key: string) {
@@ -7,7 +6,7 @@ function almostEqual(fen: string, key: string) {
   return fs[0] === ks[0] && fs[1] === ks[1];
 }
 
-export function qFen(pgn: erm.QPGN, fen: nt.Fen) {
+export function qFen(pgn: erm.QPGN, fen: string) {
   for (let key of pgn.fenMap.keys()) {
     if (almostEqual(fen, key)) {
       return pgn.fenMap.get(key);
@@ -17,7 +16,7 @@ export function qFen(pgn: erm.QPGN, fen: nt.Fen) {
 
 export function qUci(move: erm.QMove) {
   if (move.tsmove) {
-    return m.uci(move.tsmove);
+    return move.tsmove.uci;
   }
 }
 

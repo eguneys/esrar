@@ -3,10 +3,10 @@ export type PNode<A> = {
   children: Array<PNode<A>>
 };
 
-export function pnode<A>(data: A) {
+export function pnode<A>(data: A, children: Array<PNode<A>> = []) {
   return {
     data,
-    children: []
+    children
   };
 }
 
@@ -23,6 +23,14 @@ export function pClimb<A>(root: PNode<A>, f: (a: A) => void) {
 export function pClimbWithRoot<A, B>(rootValue: B, root: PNode<A>, f: (root: B, child: A, maxDepth: number) => B) {
   let rootNext = f(rootValue, root.data, pMaxDepth(root));
   root.children.forEach(_ => pClimbWithRoot(rootNext, _, f));
+}
+
+export function pMapWithRoot<A, B>(rootValue: B, root: PNode<A>, f: (root: B, child: A) => B): PNode<B> {
+  let rootNext = f(rootValue, root.data);
+  let children = root.children.map<PNode<B>>(_ => pMapWithRoot<A, B>(rootNext, _, f));
+
+  return pnode(rootNext,
+               children);
 }
 
 export function pMaxDepth<A>(root: PNode<A>): number {
