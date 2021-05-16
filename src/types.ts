@@ -1,5 +1,5 @@
 import { PNode } from './pnode';
-import { SanOrCastles, Move } from 'chests';
+import { SanOrCastles, Move } from 'chesst';
 
 export type Fen = string
 export type Ply = number

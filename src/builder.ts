@@ -1,7 +1,7 @@
 import * as erm from './types';
 import { pClimbWithRoot, pAdd, pnode, PNode } from './pnode';
 import { dis, em } from 'esra';
-import { situation, initial, SanOrCastles, sanOrCastles } from 'chests';
+import { situation, initial, SanOrCastles, sanOrCastles } from 'chesst';
 
 export type CurrentAndParent = [PNode<erm.QMove> | undefined, PNode<erm.QMove>]
 
