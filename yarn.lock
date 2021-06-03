@@ -341,9 +341,9 @@ chalk@^4.1.0:
     supports-color "^7.1.0"
 
 chesst@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/chesst/-/chesst-2.1.0.tgz#2d1001ca3fcbda0f03a1265df7761121cc45e657"
-  integrity sha512-CpaSlsDaYlAWj7hhGxZBBxp0SYREz+3LX3/044bsj0fVt2TseURxObczfqO34lAEv1gO9ZV0s1lO5omFyNR2Rw==
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/chesst/-/chesst-2.1.2.tgz#2e1a8018052d264f341e1cae7fc057c68a226f26"
+  integrity sha512-+1sFTJOAIV7LplXX8pU7MIw1Ycpgl8MXTqo38agh7TAMmVxUt9bdXYyQFs6JLfO9o/AxrssE7affChHHbhEHAA==
 
 chokidar@^3.4.3:
   version "3.5.1"

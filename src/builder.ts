@@ -27,7 +27,13 @@ export default class StudyBuilder {
       pClimbWithRoot(situation(initial), this._root, (situation, _, maxDepth) => {
         _.maxPly = _.ply + maxDepth;
         if (situation && _.move.san) {
-          let tsmove = situation.sanOrCastles(_.move.san);
+          let tsmove;
+
+          try {
+            tsmove = situation.sanOrCastles(_.move.san);
+          } catch (e) {
+            console.warn('throws at ', situation.fen, _.move.san.key);
+          }
           if (tsmove) {
             let after = tsmove.after;
             _.tsmove = tsmove;
@@ -39,7 +45,7 @@ export default class StudyBuilder {
             }
             return after;
           } else {
-            console.warn(situation.fen, _.move.san);
+            console.warn(situation.fen, _.move.san.key);
           }
         }
         return situation;

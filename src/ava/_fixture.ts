@@ -4,6 +4,20 @@ export const simple = `
 1. d4 d5 (1... d6 2. Nf3) 2. c3 *
 `;
 
+export const tarrasch = `
+[Event "Playing the French: Chapter 8 - The Tarrasch Variation"]
+[Site "https://lichess.org/study/xmgcG4Qz/7oVh0HWI"]
+[Result "*"]
+[UTCDate "2021.06.02"]
+[UTCTime "23:59:19"]
+[Variant "Standard"]
+[ECO "C07"]
+[Opening "French Defense: Tarrasch Variation, Open System, Süchting Line"]
+[Annotator "https://lichess.org/@/chesteditor"]
+
+1. e4 e6 2. d4 d5 3. Nd2 c5! 4. c3 { A } (4. Ngf3 { B } 4... cxd4 { [%cal Ge4d5,Gd8d5] } 5. Nxd4 Nc6! 6. Bb5 { B2 } (6. Nxc6 { B1 } 6... bxc6 7. Bd3 Nf6 8. O-O Be7 9. Qe2 O-O 10. c4 a5 11. b3 a4 12. Bb2 Ba6 13. Rad1 Re8) 6... Bd7 7. Bxc6 { B21 } (7. Nxc6 { B22 } 7... bxc6 8. Bd3 Bd6 9. Qe2 Ne7 10. Nf3 Ng6 11. O-O O-O 12. e5 Bc7 13. Ng5 Qe8! 14. f4 f5 15. c4 Bb6+ 16. Kh1 Ne7 17. b3 a5 18. Bd2 a4 19. b4 c5 20. Rab1 Rb8 21. Rfc1 d4 22. a3) 7... bxc6 8. O-O Bd6 9. Qe2 Ne7!? $146 (9... Qb8!? { Game 20 } 10. N4f3 Ne7 11. e5 Bc7 12. b3) 10. e5 Bc7 11. N2b3 Ng6)  (4. Bb5+ Bd7 5. Bxd7+ Qxd7!) 4... cxd4 5. cxd4 dxe4 6. Nxe4 Nf6 { [%cal Ge4c3,Ge4f6] } 7. Bd3 { A3 } (7. Nxf6+ { A2 } 7... Qxf6 8. Nf3 Bd7 9. Bd3! { [%cal Gd7c6,Gc1g5] } 9... Bb4+ 10. Bd2 $146 Bxd2+ 11. Qxd2 Bc6 12. Ne5!? Bxg2 13. Rg1 Bd5 14. Bb5+ Nc6 15. Rg4 $13 O-O 16. Nd7 Qf5 17. h3 f6! 18. Nxf8 Rxf8)  (7. Nc3 { A1 } 7... Be7 8. Nf3 a6 9. Bd3 b5 10. a3 Bb7 11. O-O O-O 12. Re1 Nc6 13. Bg5 { [%cal Gc1f4,Ga8c8] } 13... g6 14. Bc2 Rc8 15. Rc1 Na5 16. Ne5 Nc4 17. Bb3) 7... Nxe4 { A32 } (7... Bd7 { A31 } 8. Nc3 Bc6 9. Nf3 Nbd7 10. O-O Be7 11. Re1 O-O 12. Bc2 Qb6! $146 13. Qd3 Rfd8 $15 { [%cal Gd7f8,Gf8g6,Gf6d5] }) 8. Bxe4 Bb4+ 9. Bd2 Bxd2+ 10. Qxd2 Nd7 { [%cal Gg1f3,Gd7f6,Ge4d3,Ge8g8,Gb7b6] } 11. Ne2! Nf6 12. Bf3 O-O { [%cal Ge1g1] } 13. O-O (13. Nc3?! { Game 19 } 13... Qb6 14. O-O Rd8 15. Rfd1 Bd7 16. d5 Bc6 17. Qg5 h6 18. Qe5 exd5 19. Nxd5 Nxd5 20. Bxd5 Rxd5 21. Rxd5 Re8) 13... Qb6 14. Rac1 Rd8! 15. Rc4 e5! $146 16. Ng3! Rxd4 17. Rxd4 Qxd4 18. Qxd4 exd4 19. Rd1 Bd7 20. Rxd4 Rc8 21. h3 b6 *
+`;
+
 export const advanced = `
 [Event "Playing the French: Chapter 1 - The Advance Variation"]
 [Site "https://lichess.org/study/xmgcG4Qz/HE8yauSF"]
