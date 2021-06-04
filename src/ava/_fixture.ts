@@ -4,6 +4,20 @@ export const simple = `
 1. d4 d5 (1... d6 2. Nf3) 2. c3 *
 `;
 
+export const antisic = `
+[Event "Beating the Anti - Sicilians by Vassilios Kotronias: Chapter 1 - Various 2nd Moves - Rare Options"]
+[Site "https://lichess.org/study/8DGxGjSa/nYpHZj6t"]
+[Result "*"]
+[UTCDate "2021.06.04"]
+[UTCTime "17:24:34"]
+[Variant "Standard"]
+[ECO "B20"]
+[Opening "Sicilian Defense: Mengarini Variation"]
+[Annotator "https://lichess.org/@/chesteditor"]
+
+1. e4 c5 2. a3 (2. Na3 { [%csl Gc4][%cal Gb1a3,Ga3c4] } 2... Nc6 3. Nf3 { D2 } (3. Bb5 { D1 } { [%cal Gf1b5] } 3... e5!? { [%csl Gd5] } 4. d3! $146 Nge7 5. Nc4 d6 6. Bd2! { [%cal Ga7a6,Gd2a5,Gd8d7,Gc4b6] } 6... Ng6! 7. Ne3 Be7 8. Nf3 O-O 9. O-O Nd4!? 10. Bc4 Nxf3+ 11. Qxf3 Bg5! 12. a4 Be6 $10) 3... Nf6 { [%csl Gc3,Ge4] } 4. e5 Ng4 5. Qe2 f6!? 6. Nc4 Ngxe5 7. Ncxe5 fxe5 8. Nxe5 g6!? 9. Nxc6! dxc6! 10. Qe5! Qd4 11. Qxd4 cxd4 12. Bc4 b5 13. Be2 Be6 $10)  (2. f4 { E } 2... g6 3. d4!? cxd4 4. Qxd4 Nf6 5. e5 Nc6 6. Qd1 { E1 } { [%cal Gd4d1,Gf6e4] } (6. Qd3 { E2 } 6... Nh5!? { [%cal Gf6g8] } 7. Be2 d6! 8. Bxh5 Bf5 9. Qb3 gxh5 10. Nf3 { [%cal Gd8d7,Ge1h1,Ge7e6] } 10... Bg7!? $146 11. Qxb7!? Rc8 $44) 6... Ne4!? 7. Nd2 { E11 } (7. Be3 d6!? $146 8. Bd3!? Qa5+ 9. c3 Qd5! 10. Na3!? Nc5! 11. Bxc5 Qxc5 12. Nb5 Rb8! $15 { [%cal Gb5c7] }) 7... Nxd2 8. Bxd2 { [%cal Gd7d6] } 8... Bg7 9. Bc3 d6 10. Nf3 O-O 11. Bb5 { [%csl Ge5] } 11... Qb6 12. Qe2 Bg4 13. Bxc6! bxc6 14. Qf2! Qa6! 15. Qe2 Qa4 $15)  (2. c4 { B } 2... Nc6 3. Ne2!? Nf6! { [%csl Ge2] } 4. Nbc3 e6! 5. d4 d5! 6. cxd5 exd5 7. Bg5 Be7! 8. Bxf6!? Bxf6 9. dxc5 d4 10. Nd5 O-O 11. g3!? $146 Bg4 12. Bg2 d3 13. Qxd3 Bxb2 14. Rd1 Qa5+ 15. Qd2 Ba3 16. Qxa5 Nxa5 17. h3 Be6 18. O-O Bxc5 19. Nef4 $10)  (2. Bc4 { A } 2... e6! 3. Qe2 Nc6 4. Nf3 Nge7!? 5. Bb3 g6!? 6. c3 Bg7 7. d3 b6 8. O-O Ba6 9. Re1 O-O 10. Na3 d5 11. exd5 Nxd5 12. Bg5 Qc7 $15 $146 { [%csl Gd3] })  (2. Ne2 { C } 2... Nf6!? 3. Nbc3 d5! { [%csl Ge2][%cal Gd7d5] } 4. exd5 Nxd5 5. g3 Nxc3 6. Nxc3 Bd7! { [%cal Gd7c6] } 7. d4! cxd4 8. Qxd4 Nc6 9. Qe4! g6! $146 { [%cal Gd7f5] } 10. Bg2 Bg7 11. O-O O-O 12. Rd1 Qc8 13. Be3 Bf5 14. Qa4 Bh3! 15. Be4 Bg4 16. Rd5 Qe6 $10) 2... g6! 3. b4 Bg7 4. Nc3! { F2 } { [%cal Gf1g2] } (4. c3?! { F1 } { [%cal Gb1c3] } 4... d5! 5. exd5 Qxd5 6. Nf3 Nf6 7. Be2 O-O { [%cal Gc5c4] } 8. c4 Qd8 9. Bb2! b6! 10. O-O Bb7 11. d4! $146 cxd4 12. Nxd4 Ne4 13. Bf3 Qd7! 14. Qd3 Nc6! 15. Bxe4 Nxd4 16. Nc3 Bxe4 17. Qxe4 Qe6 18. Qxe6 Nxe6 $15) 4... b6! 5. Nf3 Nc6 6. Bb2!? $146 { [%cal Gc5b4] } 6... e5! 7. Bc4 Nge7 8. O-O O-O 9. Nd5 d6 $10 10. c3 Rb8 11. Ne3 b5 12. Ba2 a5 13. bxc5 dxc5 14. a4 b4 15. Qe2 Bd7 16. Bc4 Nc8 *
+`;
+
 export const tarrasch = `
 [Event "Playing the French: Chapter 8 - The Tarrasch Variation"]
 [Site "https://lichess.org/study/xmgcG4Qz/7oVh0HWI"]
