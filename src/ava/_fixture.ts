@@ -1,3 +1,20 @@
+export const result10 = `
+[Event "4...Bc5"]
+[Site "https://lichess.org/study/UwttpO9c/suM7y1EZ"]
+[Date "1996.??.??"]
+[White "Glek, I."]
+[Black "Zude, A."]
+[Result "1-0"]
+[UTCDate "2021.06.27"]
+[UTCTime "10:17:14"]
+[Variant "Standard"]
+[ECO "C46"]
+[Opening "Four Knights Game"]
+[Annotator "https://lichess.org/@/amazingatlas"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. g3 Bc5 (4... d5 5. exd5 Nxd5 6. Bg2 Nxc3 7. bxc3 Bd6 8. O-O O-O 9. Rb1 Rb8 10. d4 Bg4 11. h3 Bd7 12. Qd3 exd4 13. Ng5 g6 14. cxd4 Nb4 15. Qd2 Nxa2 16. Nxh7 Kxh7 17. Qh6+ Kg8 18. Bd5 Nc3 19. Qxg6+ Kh8 20. Qh5+ Kg8 21. Bc4 b5 22. Bg5 Be7 23. Qg6+ Kh8 24. Bf6+ Bxf6 25. Qh6+ Kg8 26. Bd3 Ne2+ 27. Kh2 { 1-0 Glek,I-Kroeze,F/4...d5 1996 })  (4... Bb4 5. Bg2 d6 6. d3 Bg4 7. h3 Bh5 8. O-O h6 9. g4 Bg6 10. Nh4 Bh7 11. Nf5 Bxf5 12. exf5 Qd7 13. Nd5 Nxd5 14. Bxd5 O-O-O 15. c3 Bc5 16. b4 Bb6 17. a4 a5 18. Be3 Ne7 19. Bg2 d5 20. Bxb6 cxb6 21. bxa5 bxa5 22. Rb1 Qd6 23. Rb5 b6 24. Qb3 Kc7 25. Rb1 { 1-0 Glek,I-Van den Broek,R/4...Bb4 2002 })  (4... d6 5. Bg2 Be7 6. d4 exd4 7. Nxd4 Bd7 8. O-O Nxd4 9. Qxd4 Bc6 10. e5 dxe5 11. Bxc6+ bxc6 12. Qxe5 O-O 13. Bg5 Nd5 14. Bxe7 Qxe7 15. Qxe7 Nxe7 16. Rfe1 Nd5 17. Nxd5 cxd5 18. Re7 Rfc8 19. Rd1 Kf8 20. Rd7 c6 21. Re1 Re8 22. Rxe8+ Rxe8 23. Rc7 Re1+ 24. Kg2 Re6 25. Kf3 a6 26. b3 Ke8 27. Ra7 Rf6+ 28. Ke3 c5 29. Rc7 d4+ 30. Ke2 Rf5 31. f4 h5 32. Kd3 Kd8 33. Rc6 Kd7 34. Rxa6 { 1-0 Petrov,M-Mazurok,A/4...d6 2010 })  (4... g6 5. d4 exd4 6. Nxd4 Bg7 7. Nde2 O-O 8. Bg2 d6 9. h3 Re8 10. O-O Bd7 11. f4 a5 12. g4 h6 13. Be3 a4 14. Qd2 a3 15. b3 b5 16. Ng3 b4 17. Nce2 Nh7 18. e5 dxe5 19. Rad1 Nf8 20. fxe5 Nxe5 21. Bxh6 Bxh6 22. Qxh6 Ra5 23. Nf4 Nh7 24. Nfh5 gxh5 25. Nxh5 Qg5 26. Nf6+ Qxf6 27. Rxf6 Nxf6 28. Qxf6 Rc5 29. Rd5 Rxc2 30. Rxe5 Rxe5 31. Qxe5 Rxa2 32. Qg5+ Kf8 33. Qc5+ Ke8 34. Qxb4 { 1-0 Hector,J-Hartman,C/4...g6 1996 }) 5. Bg2 d6 6. d3 O-O 7. Na4 Bb6 8. Nxb6 axb6 9. O-O Re8 10. h3 h6 11. Re1 Bd7 12. Kh2 Ne7 13. d4 Ng6 14. b3 Bc6 15. d5 Bd7 16. Nd2 Rf8 17. Nc4 Nh7 18. Ne3 Ne7 19. Qd3 Qc8 20. f4 exf4 21. gxf4 Ng6 22. Nc4 b5 23. Nb2 Re8 24. Qg3 Kh8 25. Nd3 Re7 26. Bb2 Qe8 27. Bf3 c6 28. e5 dxe5 29. d6 exf4 30. Qxg6 fxg6 31. Rxe7 Qf8 32. Rxd7 Nf6 33. Nxf4 Qc8 34. Nxg6+ Kh7 35. Be4 { 1-0 Black resigns. } 1-0
+`;
+
 export const simple = `
 [Event "London System Vol 1: Introduction"]
 

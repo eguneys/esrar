@@ -45,7 +45,7 @@ export default class StudyBuilder {
             }
             return after;
           } else {
-            console.warn(situation.fen, _.move.san.key);
+            console.warn('couldnt make ts move', situation.fen, _.move.san.key);
           }
         }
         return situation;

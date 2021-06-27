@@ -1,18 +1,22 @@
 import test from 'ava';
 import Esrar from '../';
-import { more, simple, advanced, tarrasch, antisic } from './_fixture';
+import { result10, more, simple, advanced, tarrasch, antisic } from './_fixture';
 import * as q from '../qpgn';
 
-test.only('anti sicilian', t => {
+test('result 1-0', t => {
+  t.is(Esrar(result10).pgns.length, 1);
+});
+
+test('anti sicilian', t => {
   t.is(Esrar(antisic).pgns.length, 1);
 });
 
-test.failing('tarrasch', t => {
+test('tarrasch', t => {
   t.is(Esrar(tarrasch).pgns.length, 1);
 });
 
 
-test.failing('london', t => {
+test.skip('london', t => {
   t.is(Esrar(more).pgns.length, 5);
 });
 
@@ -41,7 +45,7 @@ test('pgns', t => {
 
   let esrar = Esrar(simple);
 
-  console.log(esrar.pgns[0].fenMap);
+  //console.log(esrar.pgns[0].fenMap);
 
   let d4d6 = 'rnbqkbnr/ppp1pppp/3p4/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2';
 
